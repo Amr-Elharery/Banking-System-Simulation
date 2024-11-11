@@ -1,0 +1,15 @@
+Task: Banking System Simulation
+You're simulating a banking system where multiple users (clients) can deposit and withdraw money from a shared bank account.
+The goal is to ensure thread safety in a multi-threaded environment, so transactions don’t conflict and the final balance remains accurate.
+
+Requirements:
+
+    Create a shared BankAccount class with methods for deposit and withdraw.
+    Create multiple threads representing different clients. Each client thread will:
+        Randomly decide to either deposit or withdraw an amount between $10 and $100.
+        Perform this transaction 5 times.
+    Use thread synchronization to ensure thread safety on the bank account’s balance.
+    Print each transaction (including deposits and withdrawals), and, after all transactions are complete, print the final account balance.
+Additional Notes:
+    If a thread attempts to withdraw more money than is available, it should display a message saying the withdrawal failed due to insufficient funds.
+    Start with a balance of $1000 in the bank account.
